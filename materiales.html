@@ -8,7 +8,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Pacifico&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Amatic+SC:wght@700&display=swap"
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Materiales</title>
@@ -16,21 +16,21 @@
 
 <body>
     <header>
-        <h1>Invernadero hidropónico automatizado</h1>
+        <h1> <a href="index.html">Invernadero hidropónico automatizado</a> </h1>
         <nav class="sticky">
             <ul>
-                <li class="dropdown"> <a class="enlaces" href="index.html">Hidroponia</a>
+                <li class="dropdown"> <a class="enlaces" href="hidroponia.html">Hidroponia</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="index.html">¿Qué es?</a> </li>
-                            <li> <a href="index.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
+                            <li> <a href="hidroponia.html">¿Qué es?</a> </li>
+                            <li> <a href="hidroponia.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
                         </ul>
                     </div>
                 </li>
                 <li class="dropdown"> <a class="enlaces" href="automatizacion.html">Automatización</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="automatizacion.html">¿Qué es?</a> </li>           
+                            <li> <a href="automatizacion.html">¿Qué es?</a> </li>
                             <li><a href="automatizacion.html#arduino">Arduino</a></li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@
                             <li> <a href="proyecto.html#maraton">Maratón de Robótica</a> </li>
                             <li><a href="proyecto.html#investigacion">Investigación previa</a></li>
                             <li><a href="proyecto.html#realizacion">Realización</a></li>
-                            
+
                         </ul>
                     </div>
                 </li>
@@ -70,7 +70,7 @@
             <h2>Materiales</h2>
             <h2>Utilizados para la maqueta</h2>
             <p class="informacion">
-                Tratando de seguir con la consigna del concurso se utilizó la mayor cantidad de materiales reutilizados, buscando reciclar. Por otro lado, al tener un presupuesto acortado para realizar este proyecto, muchos de los sensores o partes de maquinaria específicos no se pudieron obtener, se los reemplazó en la maqueta por leds ilustrativos.
+                Tratando de seguir con la consigna del concurso se utilizó la mayor cantidad de materiales reutilizados, buscando reciclar. Por otro lado, al tener un presupuesto acortado para realizar este proyecto, muchos de los sensores o partes de maquinarias específicas no se pudieron obtener, se los reemplazó en la maqueta por leds ilustrativos.
             </p>
             <section id="estructura" class="interno">
                 <h3 class="subtitulo">Estructura</h3>
@@ -117,7 +117,7 @@
                             target="_blank">Sensor
                             Ultrasónico</a><img src="img/ultrasonico.jpg" alt="Sensor Ultrasónico"></li>
                     <li><a href="https://listado.mercadolibre.com.ar/sensor-temperatura-y-humedad-dht11#D[A:sensor%20temperatura%20y%20humedad%20dht11]"
-                            target="_blank">Sensor de temperatura y humedad Dht11</a><img src="img/temphum.jpg"
+                            target="_blank">Sensor de temperatura y humedad de ambiente Dht11</a><img src="img/temphum.jpg"
                             alt="Sensor de temperatura y humedad Dht11">
                     </li>
                     <li> <a href="https://listado.mercadolibre.com.ar/cable-dupont-macho-macho#D[A:cable%20dupont%20macho%20macho]" target="_blank">Cable dupont macho macho</a><img src="img/dupontmm.jpg" alt="Cable dupont macho macho"> </li>
@@ -184,7 +184,17 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="funcion.js"></script>  
+    <script>
+        var stickyOffset = $('.sticky').offset().top;
+    
+            $(window).scroll(function(){
+              var sticky = $('.sticky'),
+                  scroll = $(window).scrollTop();
+            
+              if (scroll >= stickyOffset) sticky.addClass('fixed');
+              else sticky.removeClass('fixed');
+            });
+            </script>  
 </body>
 
 </html>

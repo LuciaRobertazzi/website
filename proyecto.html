@@ -8,7 +8,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Pacifico&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Amatic+SC:wght@700&display=swap"
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Proyecto</title>
@@ -16,14 +16,14 @@
 
 <body>
     <header>
-        <h1>Invernadero hidropónico automatizado</h1>
+        <h1> <a href="index.html">Invernadero hidropónico automatizado</a> </h1>
         <nav class="sticky">
             <ul>
-                <li class="dropdown"> <a class="enlaces" href="index.html">Hidroponia</a>
+                <li class="dropdown"> <a class="enlaces" href="hidroponia.html">Hidroponia</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="index.html">¿Qué es?</a> </li>
-                            <li> <a href="index.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
+                            <li> <a href="hidroponia.html">¿Qué es?</a> </li>
+                            <li> <a href="hidroponia.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
                         </ul>
                     </div>
                 </li>
@@ -119,8 +119,7 @@
                     Investigación
                 </h2>
                 <p class="informacion">
-                    Se visitó un invernadero hidropónico ubicado en la ciudad de Allen, Rio Negro. Se analizaron qué
-                    acciones se podían automatizar y cuáles era mejor mantener manuales. Se debió tener conocimiento
+                    Se visitó un invernadero hidropónico ubicado en la ciudad de Allen, Rio Negro. Se observó la necesidad de automatizar algunas tareas para obtener una mayor producción con una menor intervención del productor. Se debió tener conocimiento
                     previo en hidroponia, fotosíntesis y Arduino; se buscó apoyo en todas estas áreas.
                 </p>
                 <div class="galeria">
@@ -158,7 +157,7 @@
                 <h2>Realización del proyecto</h2>
                 <div class="informacion">
                     <p>Dado que se tenía un tiempo límite para la entrega de un video demostrativo del proyecto, se
-                        contó con un mes para investigar, realizar, corregir y terminar la maqueta. Si bien luego se fue
+                        contó con un mes para investigar, realizar, corregir y enviar un informe completo del proyecto. Si bien luego se fue
                         manteniendo y mejorando, partes del funcionamiento siguen siendo sólo ilustrativas, ya sea por
                         falta de presupuesto o conocimiento.</p>
                     <p>En simples paso, este fue el proceso que se siguió:</p>
@@ -229,7 +228,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-        <script src="funcion.js"></script>  
+        <script>
+            var stickyOffset = $('.sticky').offset().top;
+        
+                $(window).scroll(function(){
+                  var sticky = $('.sticky'),
+                      scroll = $(window).scrollTop();
+                
+                  if (scroll >= stickyOffset) sticky.addClass('fixed');
+                  else sticky.removeClass('fixed');
+                });
+                </script>  
 </body>
 
 </html>

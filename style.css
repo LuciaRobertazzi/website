@@ -19,8 +19,11 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between; }
+  header a {
+    color: rgba(2, 3, 2, 0.658); }
   header h1 {
-    font-family: 'Pacifico', cursive; }
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em; }
   header nav {
     text-align: center; }
 
@@ -43,7 +46,7 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #386c5fda;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
@@ -54,21 +57,40 @@ header {
         font-family: 'Kumbh Sans', sans-serif;
         margin: 10px; }
         .dropdown-content ul li a {
-          color: #386c5f; }
+          color: #D9EDDF; }
   .dropdown:hover .dropdown-content {
     display: block; }
 
-.fixed {
+.fixed, .menubann {
   position: fixed;
-  top: 20px;
+  top: 0;
   left: 20px;
   width: 97%;
-  margin: 20p;
   z-index: 10;
   border: 2px solid rgba(2, 3, 2, 0.658);
+  border-top: none;
   border-radius: 10px;
-  background-color: rgba(232, 255, 230, 0.692);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: rgba(232, 255, 230, 0.904);
   padding: 20px 0 5px 0; }
+
+.menubann {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px; }
+
+.banner {
+  margin: 20px 0;
+  height: 97vh;
+  width: 97vw;
+  z-index: -3;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .banner img {
+    width: 90%;
+    height: 90%; }
 
 /*start GENERAL*/
 h2 {
@@ -137,8 +159,6 @@ section#uno {
       width: 90%; }
 
 /*end HIDROPONIA*/
-/*start AUTOMATIZACION*/
-/*end AUTOMATIZACION*/
 /*start PROYECTO*/
 .videoproyecto {
   width: 100%;
@@ -232,7 +252,7 @@ section#uno {
 /*
  font-family: 'Kumbh Sans', sans-serif;   P
 font-family: 'Montserrat', sans-serif;    RESTO
-font-family: 'Pacifico', cursive;         H1
+font-family: 'Amatic SC', cursive;        H1
  */
 
 /*# sourceMappingURL=style.css.map */

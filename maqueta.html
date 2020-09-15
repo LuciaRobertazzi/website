@@ -8,7 +8,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Pacifico&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Amatic+SC:wght@700&display=swap"
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Maqueta</title>
@@ -16,14 +16,14 @@
 
 <body>
     <header>
-        <h1>Invernadero hidropónico automatizado</h1>
+        <h1> <a href="index.html">Invernadero hidropónico automatizado</a> </h1>
         <nav class="sticky">
             <ul>
-                <li class="dropdown"> <a class="enlaces" href="index.html">Hidroponia</a>
+                <li class="dropdown"> <a class="enlaces" href="hidroponia.html">Hidroponia</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="index.html">¿Qué es?</a> </li>
-                            <li> <a href="index.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
+                            <li> <a href="hidroponia.html">¿Qué es?</a> </li>
+                            <li> <a href="hidroponia.html">Beneficios y Desventajas</a> </li>
                         </ul>
                     </div>
                 </li>
@@ -78,11 +78,12 @@
                     Patagonia.
                 </p>
                 <p>
-                    Cuenta con dos tanques, uno subido a una torre y otro enterrado como cisterna. El agua desciende por
+                    Cuenta con dos tanques, uno ubicado sobre una estructura exterior elevada y otro enterrado como cisterna. El agua desciende por
                     una manguera y mediante micro aspersores va llenando tubos de PVC donde las raíces de las plantas
                     absorben los nutrientes. En la unión de estos caños se realizó una reducción del caudal del agua lo
                     que permite que el agua no se vaya con tanta facilidad. El agua sigue su curso hasta entrar en el
-                    tanque cisterna. En el tanque superior se ubicó un sensor ultrasónico que, al detectar bajos niveles
+                    tanque cisterna. Ubicado en el tanque superior, un sensor ultrasónico detecta el nivel del agua; al dect
+                    bajos niveles
                     de agua, activa una bomba localizada en el otro tanque.
                 </p>
             </div>
@@ -127,30 +128,15 @@
             <div class="informacion">
                 <p>En el interior del invernadero hay un sensor de temperatura y humedad del ambiente que, al detectar temperaturas mayores a 28° C activa dos motores colocados en los extremos de un tubo, éste comienza a girar y enrollar el nylon, permitiendo la ventilación. Al registrar temperaturas menores a 23° C, los motores se vuelven a activar, pero en sentido contrario para volver a cerrar el invernadero. </p>
                 <p>Para mantener un buen nivel de nutrientes en el agua reciclada, Se ubicó un pequeño tanque que contiene macro y micro nutrientes diluidos en agua la cual es administrada al tanque cisterna cuando un sensor de conductividad ubicado en el éste detecte niveles bajos de conductividad. </p>
-                <p>Para una mejor organización, se colocó un tablero en la torre donde se ubicó el Arduino y la fuente de energía.</p>
+                <p>Para una mejor organización, se diseñó un tablero principal en la torre donde se ubicó el Arduino y la fuente de energía.</p>
 
             </div>
 
         </article>
         <article id="planoscodigo" class="interno">
             <h2>Planos y Código</h2>
-            <p class="informacion"> Dado que el proyecto continua en investigación y desarrollo, partes de la estructura y el código pueden irse modificando con el transcurso del tiempo. Si usted quiere obtener esta información, intercambiar ideas o despejar dudas al respecto, <a href="mailto:lurobertazzi@gmail.com">solicítelos acá.</a></p>
+            <p class="informacion"> Dado que el proyecto continua en investigación y desarrollo, partes de la estructura y el código pueden sufrir cambios con el transcurso del tiempo. Si usted quiere obtener esta información, intercambiar ideas o despejar dudas al respecto, <a href="mailto:lurobertazzi@gmail.com">solicítelos acá.</a></p>
         </article>
-        <!--         <article>
-            <h2>Faltantes</h2>
-            <div class="informacion">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor doloremque totam molestias
-                    minima magnam exercitationem mollitia quae? Quia provident quibusdam sequi
-                </p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </article> -->
     </main>
 
     <footer>
@@ -196,7 +182,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="funcion.js"></script>  
+    <script>
+        var stickyOffset = $('.sticky').offset().top;
+    
+            $(window).scroll(function(){
+              var sticky = $('.sticky'),
+                  scroll = $(window).scrollTop();
+            
+              if (scroll >= stickyOffset) sticky.addClass('fixed');
+              else sticky.removeClass('fixed');
+            });
+            </script>   
 
 </body>
 

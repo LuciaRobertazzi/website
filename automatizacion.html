@@ -8,7 +8,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Pacifico&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Amatic+SC:wght@700&display=swap"
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Automatización</title>
@@ -16,14 +16,14 @@
 
 <body>
     <header>
-        <h1>Invernadero hidropónico automatizado</h1>
+        <h1> <a href="index.html">Invernadero hidropónico automatizado</a> </h1>
         <nav class="sticky">
             <ul>
-                <li class="dropdown"> <a class="enlaces" href="index.html">Hidroponia</a>
+                <li class="dropdown"> <a class="enlaces" href="hidroponia.html">Hidroponia</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="index.html">¿Qué es?</a> </li>
-                            <li> <a href="index.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
+                            <li> <a href="hidroponia.html">¿Qué es?</a> </li>
+                            <li> <a href="hidroponia.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
                         </ul>
                     </div>
                 </li>
@@ -146,7 +146,17 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="funcion.js"></script>  
+    <script>
+        var stickyOffset = $('.sticky').offset().top;
+    
+            $(window).scroll(function(){
+              var sticky = $('.sticky'),
+                  scroll = $(window).scrollTop();
+            
+              if (scroll >= stickyOffset) sticky.addClass('fixed');
+              else sticky.removeClass('fixed');
+            });
+            </script>   
 </body>
 
 </html>
