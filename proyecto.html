@@ -10,18 +10,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Pacifico&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Proyecto</title>
 </head>
 
 <body>
     <header>
         <h1>Invernadero hidropónico automatizado</h1>
-        <nav>
+        <nav class="sticky">
             <ul>
                 <li class="dropdown"> <a class="enlaces" href="index.html">Hidroponia</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="index.html#queeshidro">¿Qué es?</a> </li>
+                            <li> <a href="index.html">¿Qué es?</a> </li>
                             <li> <a href="index.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
                         </ul>
                     </div>
@@ -29,7 +30,7 @@
                 <li class="dropdown"> <a class="enlaces" href="automatizacion.html">Automatización</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="automatizacion.html#queesauto">¿Qué es?</a> </li>
+                            <li> <a href="automatizacion.html">¿Qué es?</a> </li>
                             <li><a href="automatizacion.html#arduino">Arduino</a></li>
                         </ul>
                     </div>
@@ -47,7 +48,7 @@
                 <li class="dropdown"> <a class="enlaces" href="maqueta.html">Maqueta</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="maqueta.html#estructura">Estructura</a> </li>
+                            <li> <a href="maqueta.html">Estructura</a> </li>
                             <li><a href="maqueta.html#planoscodigo">Planos y Código</a></li>
                         </ul>
                     </div>
@@ -56,7 +57,7 @@
                     <div class="dropdown-content">
                         <ul>
                             <li> <a href="materiales.html#estructura">Estructura</a> </li>
-                            <li><a href="materiales.html#cañeria">Cañeria</a></li>
+                            <li><a href="materiales.html#cañeria">Circuito de agua</a></li>
                             <li><a href="materiales.html#automatizacion">Automatización</a></li>
                         </ul>
                     </div>
@@ -76,7 +77,7 @@
             </div>
         </section>
         <section>
-            <article id="maraton">
+            <article id="maraton" class="interno">
                 <h2>
                     Maratón Nacional de Programación y Robótica
                 </h2>
@@ -112,7 +113,7 @@
                 </div>
 
             </article>
-            <article id="investigacion">
+            <article id="investigacion" class="interno">
 
                 <h2>
                     Investigación
@@ -153,7 +154,7 @@
                     </div>
                 </div>
             </article>
-            <article id="realizacion">
+            <article id="realizacion" class="interno">
                 <h2>Realización del proyecto</h2>
                 <div class="informacion">
                     <p>Dado que se tenía un tiempo límite para la entrega de un video demostrativo del proyecto, se
@@ -180,8 +181,44 @@
             </article>
     </main>
     <footer>
-        <h3>Contactanos</h3>
-        <input type="text">
+        <div class="footer">
+        <section class="participantes">
+            <h3>Participantes del proyecto</h3>
+            <article>
+                <div>
+                    <h4>Profesores</h4>
+                    <ul>
+                        <li>Alarcón, Cecilia</li>
+                        <li>Bregante, Gabriel</li>
+                        <li>Flores, Ximena</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Estudiantes</h4>
+                    <ul>
+                        <li>Aciar, Azarias</li>
+                        <li>Pacheco, Lautaro</li>
+                        <li>Palacios, Yael</li>
+                        <li>Robertazzi, Lucía</li>
+                    </ul>
+                </div>
+            </article>
+            
+        </section>
+        <section class="contacto">
+            <h3>Diseño página web</h3>
+            <article>
+                <div>
+                <h4>Lucía Robertazzi</h4>
+                <p><i class="far fa-envelope"></i> lurobertazzi@gmail.com</p>
+                <p><i class="fab fa-instagram"></i> @lurobertazzi </p>
+            </div>
+            </article>
+
+
+        </section>
+
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -192,6 +229,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script src="funcion.js"></script>  
 </body>
 
 </html>

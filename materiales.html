@@ -10,18 +10,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Montserrat:wght@600&family=Pacifico&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Materiales</title>
 </head>
 
 <body>
     <header>
         <h1>Invernadero hidropónico automatizado</h1>
-        <nav>
+        <nav class="sticky">
             <ul>
                 <li class="dropdown"> <a class="enlaces" href="index.html">Hidroponia</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="index.html#queeshidro">¿Qué es?</a> </li>
+                            <li> <a href="index.html">¿Qué es?</a> </li>
                             <li> <a href="index.html#beneficiosdesventajas">Beneficios y Desventajas</a> </li>
                         </ul>
                     </div>
@@ -29,7 +30,7 @@
                 <li class="dropdown"> <a class="enlaces" href="automatizacion.html">Automatización</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="automatizacion.html#queesauto">¿Qué es?</a> </li>           
+                            <li> <a href="automatizacion.html">¿Qué es?</a> </li>           
                             <li><a href="automatizacion.html#arduino">Arduino</a></li>
                         </ul>
                     </div>
@@ -47,7 +48,7 @@
                 <li class="dropdown"> <a class="enlaces" href="maqueta.html">Maqueta</a>
                     <div class="dropdown-content">
                         <ul>
-                            <li> <a href="maqueta.html#estructura">Estructura</a> </li>
+                            <li> <a href="maqueta.html">Estructura</a> </li>
                             <li><a href="maqueta.html#planoscodigo">Planos y Código</a></li>
                         </ul>
                     </div>
@@ -56,7 +57,7 @@
                     <div class="dropdown-content">
                         <ul>
                             <li> <a href="materiales.html#estructura">Estructura</a> </li>
-                            <li><a href="materiales.html#cañeria">Cañeria</a></li>
+                            <li><a href="materiales.html#cañeria">Circuito de agua</a></li>
                             <li><a href="materiales.html#automatizacion">Automatización</a></li>
                         </ul>
                     </div>
@@ -71,40 +72,47 @@
             <p class="informacion">
                 Tratando de seguir con la consigna del concurso se utilizó la mayor cantidad de materiales reutilizados, buscando reciclar. Por otro lado, al tener un presupuesto acortado para realizar este proyecto, muchos de los sensores o partes de maquinaria específicos no se pudieron obtener, se los reemplazó en la maqueta por leds ilustrativos.
             </p>
-            <br>
-            <br>
-
-            <section id="estructura">
+            <section id="estructura" class="interno">
                 <h3 class="subtitulo">Estructura</h3>
                 <ul class="targetasmateriales">
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
+                    <li> <a href="" target="_blank">Cartón</a><p>Base</p><img src="img/carton.jpg" alt="Cartón"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/placa-telgopor#D[A:placa%20telgopor]" target="_blank">Telgopor</a><p>Base</p><img src="/img/telgopor.jpg" alt="Telgopor"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/nylon-negro#D[A:nylon%20negro]" target="_blank">Nylon negro</a><p>Base</p><img src="/img/nylonn.jpg" alt="Nylon negro"> </li>
+                    <li> <a href="" target="_blank">Varillas de madera</a><p>Estructura general</p><img src="/img/madera.jpg" alt="Varillas de madera"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/manguera-de-polietileno-negra#D[A:manguera%20de%20polietileno%20negra]" target="_blank">Manguera de polietileno</a><p>Arco</p><img src="img/mangueran.jpg" alt="Manguera de polietileno"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/nylon-transparente-200-micrones#D[A:nylon%20transparente%20200%20micrones]" target="_blank">Nylon transparente</a><img src="img/nylont.jpg" alt="Nylon transparente"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/tubelectric-20mm#D[A:tubelectric%2020mm]" target="_blank">Caño Tubelectric</a><p>Persiana</p><img src="img/tubelectric.jpg" alt="Caño Tubelectric"> </li>
                 </ul>
                 <br>
                 <br>
             </section>
-            <section id="cañeria">
-                <h3 class="subtitulo">Cañeria</h3>
+            <section id="cañeria" class="interno">
+                <h3 class="subtitulo">Circuito cerrado de agua</h3>
                 <ul class="targetasmateriales">
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-                    <li> <a href="" target="_blank"><img src="" alt=""></a> </li>
-
+                    <li> <a href="https://listado.mercadolibre.com.ar/tubo-pvc-40-mm#D[A:tubo%20pvc%2040%20mm]" target="_blank">Tubo PVC 40mm</a><p>Cañería general</p><img src="img/tubo40.jpg" alt="Tubo PVC 40mm"></li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/manguera-de-nivel#D[A:manguera%20de%20nivel]" target="_blank">Manguera de nivel</a><p>Conexiones de tanques</p><img src="img/mangueranivel.jpg" alt="Manguera de nivel"></li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/bidones-plasticos-5-litros#D[A:bidones%20plasticos%205%20litros]" target="_blank">Bidones</a><p>Tanques</p><img src="img/bidon.jpg" alt="Bidones"></li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/microaspersores-para-goteo#D[A:microaspersores%20para%20goteo]" target="_blank">Micro aspersores</a><img src="img/micro.jpg" alt="Micro aspersores"></li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/microtuberia-goteo-4%2F7#D[A:microtuberia%20goteo%204/7]" target="_blank">Microtubería</a><img src="img/manguerita.jpg" alt="Microtubería"> </li>
+                    <li> <a href="" target="_blank">Envase de plástico</a><p>Nutrientes</p><img src="img/envase.jpg" alt="Envase de plástico"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/buje-reduccion-awaduct-40x32#D[A:buje%20reduccion%20awaduct%2040x32]" target="_blank">Buje reducción 40x32</a><p>Reducción de caudal</p><img src="img/buje.jpg" alt="Buje reducción 40x32"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/cupla-hh-ips-reduccion#D[A:cupla%20hh%20ips%20reduccion]" target="_blank">Cupla hh reducción</a><p>Reducción de caudal</p><img src="img/cuplahh.jpg" alt="Cupla hh reducción"> </li>
+                    <li> <a href="https://www.easy.com.ar/tienda/es/easyar/mi-easy/busqueda-inteligente?searchterm=t%2090%C2%BA%20hhh%20red%20ips" target="_blank">T 90° hhh</a><P>Unión de caudal</P><img src="img/thh.jpg" alt="T 90° hhh"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/tubo-polipropileno-1%2F2%22#D[A:tubo%20polipropileno%201/2%22]" target="_blank">Caño de polipropileno</a><img src="img/tubopoli.jpg" alt="Caño de polipropileno"> </li>
+                    
                 </ul>
                 <br>
                 <br>
             </section>
-            <section id="automatizacion">
+            <section id="automatizacion" class="interno">
                 <h3 class="subtitulo">Automatización</h3>
                 <ul class="targetasmateriales">
                     <li><a href="https://listado.mercadolibre.com.ar/placa-arduino-uno#D[A:placa%20arduino%20uno]"
-                            target="_blank">Placa de Arduino Uno</a> <img src="/img/arduinouno.jpg"
-                            alt="Placa de Arduino Uno"></li>
+                            target="_blank">Placa de Arduino Uno</a><img src="/img/arduinouno.jpg"
+                            alt="Placa de Arduino Uno"> </li>
+                            <li> <a href="https://listado.mercadolibre.com.ar/relay-arduino-5v-4-canales#D[A:relay%20arduino%205v%204%20canales]" target="_blank">Relay 5v 4 canales</a><img src="img/relay.jpg" alt="Relay 5v cuatro canales"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/controlador-doble-puente-h-driver-l298n#D[A:controlador%20doble%20puente%20h%20driver%20L298n]" target="_blank">Controlador motores driver L298n</a><img src="img/driver.jpg" alt="Controlador motores driver L298n"> </li>
+                    <li> <a href="https://electronica.mercadolibre.com.ar/componentes-electronicos/capital-federal/bornera-triple-arduino" target="_blank">Bornera triple</a><img src="img/bornera.jpg" alt="Bornera triple"> </li>
                     <li><a href="https://listado.mercadolibre.com.ar/sensor-ultrasonico-arduino#D[A:sensor%20ultrasonico%20arduino]"
                             target="_blank">Sensor
                             Ultrasónico</a><img src="/img/ultrasonico.jpg" alt="Sensor Ultrasónico"></li>
@@ -112,23 +120,22 @@
                             target="_blank">Sensor de temperatura y humedad Dht11</a><img src="/img/temphum.jpg"
                             alt="Sensor de temperatura y humedad Dht11">
                     </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/cable-dupont-macho-macho#D[A:cable%20dupont%20macho%20macho]" target="_blank">Cable dupont macho macho</a><img src="img/dupontmm.jpg" alt="Cable dupont macho macho"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/cable-dupont-hembra-macho#D[A:cable%20dupont%20hembra%20macho]" target="_blank">Cable dupont hembra macho</a><img src="img/duponthm.jpg" alt="Cable dupont hembra macho"> </li>
+                    <li> <a href="https://listado.mercadolibre.com.ar/cable-de-red-utp#D[A:cable%20DE%20RED%20UTP]" target="_blank">Cable de red UTP</a><p>Conexiones extensas</p><img src="img/cablered.png" alt="Cable de red UTP"> </li> 
                     <li><a href="https://listado.mercadolibre.com.ar/medidor-conductimetro-electroconductividad-tds#D[A:medidor%20conductimetro%20electroconductividad%20tds]"
-                            target="_blank">Medidor conductimetro
-                            electroconductividad TDS</a><img src="/img/conductimetro.jpg"
-                            alt="Medidor conductimetro electroconductividad tds"></li>
-                    <li><a href="https://listado.mercadolibre.com.ar/medidor-ph-agua-arduino#D[A:medidor%20ph%20agua%20arduino]"
-                            target="_blank">Sensor de PH del agua</a><img src="/img/ph.jpg" alt="Sensor de PH del agua">
-                    </li>
+                        target="_blank">Medidor conductimetro
+                        electroconductividad TDS</a><img src="/img/conductimetro.jpg"
+                        alt="Medidor conductimetro electroconductividad tds"></li>
+                <li><a href="https://listado.mercadolibre.com.ar/medidor-ph-agua-arduino#D[A:medidor%20ph%20agua%20arduino]"
+                        target="_blank">Sensor de PH del agua</a><img src="/img/ph.jpg" alt="Sensor de PH del agua">
+                </li>
+                    
                     <li> <a href="https://listado.mercadolibre.com.ar/motor-dc-3v-a-6v-arduino-plastico#D[A:motor%20dc%203v%20a%206v%20arduino%20plastico]"
-                            target="_blank">Motor DC con caja reductora de plástico</a><img src="/img/motor.jpg"
-                            alt="Motor de corriente contínua con caja reductora de plástico"> </li>
-                    <li> <a href="https://listado.mercadolibre.com.ar/bomba-sumergible-at-102-800-lts%2Fh#D[A:Bomba%20Sumergible%20At%20102%20800%20Lts/h%20]" target="_blank">Bomba sumergible</a><img src="/img/bomba.jpg" alt="Bomba sumergible"> </li>
-                    <li> <a href="" target="_blank"></a><img src="" alt=""> </li>
-                    <li> <a href="" target="_blank"></a><img src="" alt=""> </li>
-                    <li> <a href="" target="_blank"></a><img src="" alt=""> </li>
-                    <li> <a href="" target="_blank"></a><img src="" alt=""> </li>
-                    <li> <a href="" target="_blank"></a><img src="" alt=""> </li>
-
+                        target="_blank">Motor DC con caja reductora de plástico</a><img src="/img/motor.jpg"
+                        alt="Motor de corriente contínua con caja reductora de plástico"> </li>
+                <li> <a href="https://listado.mercadolibre.com.ar/bomba-sumergible-at-102-800-lts%2Fh#D[A:Bomba%20Sumergible%20At%20102%20800%20Lts/h%20]" target="_blank">Bomba sumergible</a><img src="/img/bomba.jpg" alt="Bomba sumergible"> </li>
+                <li> <a href="https://listado.mercadolibre.com.ar/toma-corrientes-doble-exterior#D[A:toma%20corrientes%20doble%20exterior]" target="_blank">Toma corrientes doble</a><p>Fuente de alimentación</p><img src="img/toma.jpg" alt="Toma corrientes doble"> </li>
                 </ul>
                 <br>
                 <br>
@@ -137,10 +144,47 @@
         </section>
     </main>
     <footer>
-        <h3>Contactanos</h3>
-        <input type="text">
-    </footer>
+        <div class="footer">
+        <section class="participantes">
+            <h3>Participantes del proyecto</h3>
+            <article>
+                <div>
+                    <h4>Profesores</h4>
+                    <ul>
+                        <li>Alarcón, Cecilia</li>
+                        <li>Bregante, Gabriel</li>
+                        <li>Flores, Ximena</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Estudiantes</h4>
+                    <ul>
+                        <li>Aciar, Azarias</li>
+                        <li>Pacheco, Lautaro</li>
+                        <li>Palacios, Yael</li>
+                        <li>Robertazzi, Lucía</li>
+                    </ul>
+                </div>
+            </article>
+            
+        </section>
+        <section class="contacto">
+            <h3>Diseño página web</h3>
+            <article>
+                <div>
+                <h4>Lucía Robertazzi</h4>
+                <p><i class="far fa-envelope"></i> lurobertazzi@gmail.com</p>
+                <p><i class="fab fa-instagram"></i> @lurobertazzi </p>
+            </div>
+            </article>
 
+
+        </section>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="funcion.js"></script>  
 </body>
 
 </html>

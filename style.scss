@@ -73,6 +73,19 @@ header{
       
 }
 
+.fixed {
+  position: fixed;
+  top: 20px; 
+  left:20px;
+  width: 97%; 
+  margin: 20p;
+  z-index: 10 ;
+  border: 2px solid rgba(2, 3, 2, 0.658);
+  border-radius: 10px;
+  background-color: rgba(232, 255, 230, 0.692);
+  padding: 20px 0 5px 0;
+}
+
 
 
 /*start GENERAL*/
@@ -109,9 +122,19 @@ p{
 
 
 article{
-  margin-bottom: 90px;
+  margin-bottom: 20px;
 }
+.interno{
+  padding-top: 90px;
+}
+.carousel{
+  width: 60%;
+  height: auto;
+  margin-left: 18.5%;
+}
+
 /*end GENERAL*/
+
 
 /*start HIDROPONIA*/
 section#uno{  /*Ajustar valores de información para que quede bien el aside*/
@@ -173,8 +196,6 @@ section#uno{  /*Ajustar valores de información para que quede bien el aside*/
 }
 .galeria{
   width: 100%;
-  padding-left: 26%;
-
 }
 /*end PROYECTO*/
 
@@ -183,15 +204,12 @@ section#uno{  /*Ajustar valores de información para que quede bien el aside*/
 
 /*start MAQUETA*/
 #presentacion{
+  margin: 30px 0;
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
+
 }
-.carousel{
-  width: 60%;
-  height: auto;
-}
+
 /*end MAQUETA*/
 
 
@@ -223,6 +241,11 @@ section#uno{  /*Ajustar valores de información para que quede bien el aside*/
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  transition-delay: 0.1s;
+  transition-duration: 1s;
+  &:hover{
+    transform: scale(1.3);
+  }
     a{
       font-family: 'Montserrat', sans-serif; 
       color: #D9EDDF;
@@ -238,9 +261,36 @@ section#uno{  /*Ajustar valores de información para que quede bien el aside*/
 /*end MATERIALES*/
 
 
-footer{
-  height: 33vh;
+.footer{
+  height: auto;
   background-color: #386c5fd2;
+  padding: 10px 5% ;
+  display: flex;
+  align-items: flex-start;
+  color: #D9EDDF;
+    section{
+      height: 100%;
+    article{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      div{
+        gap: 5px;
+      }
+    }
+  }
+  .contacto{
+    margin-left: 10px;
+    width: 30%;
+    div{
+      margin-top: 10px;
+    }
+  }
+  .participantes{
+    width: 65%;
+    border-right: 2px solid rgba(2, 3, 2, 0.658);
+    gap: 5px;
+  }
 }
   
 
